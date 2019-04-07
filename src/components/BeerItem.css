@@ -1,0 +1,10 @@
+.beer-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.beer-item img {
+  max-width: 45px;
+  max-height: 90px;
+}
