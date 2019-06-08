@@ -28,6 +28,7 @@ class SearchBar extends React.Component {
             </label>
             <input
               type="text"
+              placeholder="enter a beer name, attribute or ingredient"
               value={this.state.term}
               onChange={this.onInputChange}
             />
