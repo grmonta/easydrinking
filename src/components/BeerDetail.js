@@ -14,7 +14,7 @@ const BeerDetail = ({ beer }) => {
             <img className="ui medium image" src={beer.image_url} alt="" />
           </div>
           <div className="content">
-            <div class="header">
+            <div className="header">
               <h2>{beer.name}</h2>
               <p>"{beer.tagline}"</p>
             </div>
@@ -33,28 +33,9 @@ const BeerDetail = ({ beer }) => {
             <p>MALT: {beer.ingredients.malt[0].name}</p>
             <p>HOPS: {beer.ingredients.hops[0].name}</p>
             <p>
-              DETAILS: added at the {beer.ingredients.hops[0].add} and gives it
-              a {beer.ingredients.hops[0].attribute} attribute
-            </p>
-            <div className="extra">Additional Details</div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, quaerat.
-            </p>
-            <div className="extra">Additional Details</div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, quaerat.
-            </p>
-            <div className="extra">Additional Details</div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, quaerat.
-            </p>
-            <div className="extra">Additional Details</div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, quaerat.
+              DETAILS: {beer.ingredients.hops[0].name} hops is added at the{' '}
+              {beer.ingredients.hops[0].add} and gives it a{' '}
+              {beer.ingredients.hops[0].attribute} attribute
             </p>
           </div>
         </div>

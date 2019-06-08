@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import beer from './apis/beer';
 import BeerList from './BeerList';
 import BeerDetail from './BeerDetail';
-
+import './App.css';
 class App extends React.Component {
   state = { beers: [], selectedBeer: null };
 
